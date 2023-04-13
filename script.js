@@ -115,4 +115,9 @@ var addExpr = function (a, b) {
 addExpr(2, 5);
 addExpr(3, 6, 7, 9);
 
-var addArrow = (a, b) => a + b;
+var addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+addArrow(2, 5, 7);
+//porem ja nao utilizamos esse argumento no JS moderno, pois ja utilizamos opções mais modernas
