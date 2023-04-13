@@ -80,3 +80,4 @@ const jonas = {
     console.log(2023 - this.year);
   },
 };
+console.log(jonas);
