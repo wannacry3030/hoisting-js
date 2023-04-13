@@ -74,10 +74,17 @@
 // f();
 
 const jonas = {
+  firstName: 'Jonas',
   year: 1996,
   calcAge3: function () {
     console.log(this);
     console.log(2023 - this.year);
   },
+
+  greet: () => {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  },
 };
-console.log(jonas);
+
+jonas.greet();
