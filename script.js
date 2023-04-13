@@ -80,6 +80,7 @@ const jonas = {
     console.log(this);
     console.log(2023 - this.year);
 
+    //solução 1
     //   const self = this; //self or that
     //   const isMillenial = function () {
     //     console.log(self);
@@ -88,11 +89,13 @@ const jonas = {
     //   isMillenial();
     // },
 
-    const self = this; //self or that
-    const isMillenial = function () {
-      console.log(self);
-      console.log(self.year >= 1981 && self.year <= 1996);
+    //solução 2
+    const isMillenial = () => {
+      console.log(this);
+      console.log(this.year >= 1981 && this.year <= 1996);
     };
+    isMillenial();
+    //essa solução so funciona pq a função usa o this keyword do parent scope
   },
 
   greet: () => {
@@ -103,3 +106,13 @@ const jonas = {
 
 jonas.greet();
 jonas.calcAge3();
+
+//arguments keyword
+var addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+addExpr(2, 5);
+addExpr(3, 6, 7, 9);
+
+var addArrow = (a, b) => a + b;
