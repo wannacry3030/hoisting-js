@@ -90,34 +90,40 @@ const jonas = {
     // },
 
     //solução 2
-    const isMillenial = () => {
-      console.log(this);
-      console.log(this.year >= 1981 && this.year <= 1996);
-    };
-    isMillenial();
-    //essa solução so funciona pq a função usa o this keyword do parent scope
-  },
+//     const isMillenial = () => {
+//       console.log(this);
+//       console.log(this.year >= 1981 && this.year <= 1996);
+//     };
+//     isMillenial();
+//     //essa solução so funciona pq a função usa o this keyword do parent scope
+//   },
 
-  greet: () => {
-    console.log(this);
-    console.log(`Hey ${this.firstName}`);
-  },
-};
+//   greet: () => {
+//     console.log(this);
+//     console.log(`Hey ${this.firstName}`);
+//   },
+// };
 
-jonas.greet();
-jonas.calcAge3();
+// jonas.greet();
+// jonas.calcAge3();
 
-//arguments keyword
-var addExpr = function (a, b) {
-  console.log(arguments);
-  return a + b;
-};
-addExpr(2, 5);
-addExpr(3, 6, 7, 9);
+// //arguments keyword
+// var addExpr = function (a, b) {
+//   console.log(arguments);
+//   return a + b;
+// };
+// addExpr(2, 5);
+// addExpr(3, 6, 7, 9);
 
-var addArrow = (a, b) => {
-  console.log(arguments);
-  return a + b;
-};
-addArrow(2, 5, 7);
+// var addArrow = (a, b) => {
+//   console.log(arguments);
+//   return a + b;
+// };
+// addArrow(2, 5, 7);
 //porem ja nao utilizamos esse argumento no JS moderno, pois ja utilizamos opções mais modernas
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
