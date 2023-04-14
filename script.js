@@ -127,3 +127,13 @@ let oldAge = age;
 age = 31;
 console.log(age);
 console.log(oldAge);
+
+const me = {
+  name: 'lucas',
+  age: 30,
+};
+
+const friend = me;
+friend.age = 27;
+console.log('Friends:', friend);
+console.log('Me', me);
