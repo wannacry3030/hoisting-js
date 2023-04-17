@@ -122,18 +122,18 @@
 // addArrow(2, 5, 7);
 //porem ja nao utilizamos esse argumento no JS moderno, pois ja utilizamos opções mais modernas
 
-let age = 30;
-let oldAge = age;
-age = 31;
-console.log(age);
-console.log(oldAge);
+// let age = 30;
+// let oldAge = age;
+// age = 31;
+// console.log(age);
+// console.log(oldAge);
 
-const me = {
-  name: 'lucas',
-  age: 30,
-};
+// const me = {
+//   name: 'lucas',
+//   age: 30,
+// };
 
-const friend = me;
-friend.age = 27;
-console.log('Friends:', friend);
-console.log('Me', me);
+// const friend = me;
+// friend.age = 27;
+// console.log('Friends:', friend);
+// console.log('Me', me);
