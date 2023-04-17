@@ -137,3 +137,37 @@
 // friend.age = 27;
 // console.log('Friends:', friend);
 // console.log('Me', me);
+
+//primitive types
+let lastName = 'william';
+let oldLastName = lastName;
+lastName = 'Davis';
+console.log(lastName, oldLastName);
+
+//reference types
+const jessica = {
+  firstName: 'jessica',
+  lastName: 'williams',
+  age: 27,
+};
+
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davis';
+console.log('Before marriage:', jessica);
+console.log('after marriage:', marriedJessica);
+
+//copying objects
+const jessica2 = {
+  firstName: 'jessica',
+  lastName: 'williams',
+  age: 27,
+  family: ['alice', 'bob'],
+};
+
+//object.assign justa 2 elementos e retorna 1, porem ele cria uma shallow copy, e nao um deep clone, que seria copiar tudo, nao apenas o elemento externo
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+jessicaCopy.family.push('mary');
+jessicaCopy.family.push('john');
+console.log('Before marriage:', jessica2);
+console.log('after marriage:', jessicaCopy);
